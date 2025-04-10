@@ -1,5 +1,12 @@
 # Defect detection computer vision 
-A simple vision system for casting product images.
+A simple vision system for defect detection of casting product images.
+
+The images are put into two categories, ok or defect.
+
+What do you want the model to predict? 
+Either that there is a defect or not?
+Or do you want to classify the defect?
+What should the output be, should it be just yes or no to defect?
 
 ## Functions
 

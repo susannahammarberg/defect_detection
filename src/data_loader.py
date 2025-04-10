@@ -2,8 +2,6 @@ import cv2
 import os
 import numpy as np
 
-print('hello)')
-
 def load_images(image_path):
     # Load image
     img = cv2.imread(image_path, cv2.IMREAD_GRAYSCALE)

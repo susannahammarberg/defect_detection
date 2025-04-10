@@ -1,4 +1,3 @@
-import tensorflow as tf
 from tensorflow.keras import layers, models
 
 def build_model():
@@ -11,8 +10,8 @@ def build_model():
         layers.Conv2D(128, (3, 3), activation='relu'),
         layers.Flatten(),
         layers.Dense(128, activation='relu'),
-        layers.Dense(10, activation='softmax')  # Number of classes
-        #TODO det är ju bara 2 klasser
+        layers.Dense(2, activation='softmax')  # Number of classes
+
     ])
     model.compile(optimizer='adam', loss='sparse_categorical_crossentropy', metrics=['accuracy'])
     return model

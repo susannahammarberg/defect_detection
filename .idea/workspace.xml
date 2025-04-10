@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dad6622a-087d-43ab-b634-9de1f9bd49fa" name="Changes" comment="Added a notebook for demonstrating the project">
-      <change afterPath="$PROJECT_DIR$/src/utils.py" afterDir="false" />
+    <list default="true" id="dad6622a-087d-43ab-b634-9de1f9bd49fa" name="Changes" comment="Added data loader, basic prepocessing, a basic CNN model and basic evaluation">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notebook/.ipynb_checkpoints/project_demo-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/notebook/.ipynb_checkpoints/project_demo-checkpoint.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notebook/project_demo.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/notebook/project_demo.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/data_loader.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/data_loader.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/model.py" afterDir="false" />
@@ -99,21 +96,29 @@
       <option name="presentableId" value="LOCAL−00003" />
       <updated>1737548526685</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL−00004" summary="Added data loader, basic prepocessing, a basic CNN model and basic evaluation">
+      <option name="closed" value="true" />
+      <created>1744186496876</created>
+      <option name="number" value="LOCAL−00004" />
+      <option name="presentableId" value="LOCAL−00004" />
+      <updated>1744186496876</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Project directory structure" />
     <MESSAGE value="Added a notebook for demonstrating the project" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added a notebook for demonstrating the project" />
+    <MESSAGE value="Added data loader, basic prepocessing, a basic CNN model and basic evaluation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added data loader, basic prepocessing, a basic CNN model and basic evaluation" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/src/main.py</url>
-          <line>19</line>
-          <option name="timeStamp" value="6" />
+          <line>54</line>
+          <option name="timeStamp" value="11" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
