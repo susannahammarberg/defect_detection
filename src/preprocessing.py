@@ -11,6 +11,6 @@ def preprocess_data(images):
 
 def convert_labels(labels):
     # Convert labels to numerical values
-    label_mapping = {'ok': 0, 'defect': 1}
+    label_mapping = {'ok_front': 0, 'def_front': 1}
     labels = [label_mapping[label] for label in labels]
     return np.array(labels)
