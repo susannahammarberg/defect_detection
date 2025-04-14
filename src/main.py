@@ -19,10 +19,11 @@ def main():
     train_images, train_labels = load_data(train_dir)
     print(train_images.shape)
     print(train_labels)
+
     # load test data
-    # print("Loading testing data...")
-    # test_dir = r"../data/casting_data/test"
-    # test_images, test_labels = load_data(test_dir)
+    print("Loading testing data...")
+    test_dir = r"../data/casting_data/test"
+    test_images, test_labels = load_data(test_dir)
 
     # temp: paste into notebook:
     "section to plot example images"
@@ -49,14 +50,44 @@ def main():
     train_labels = convert_labels(train_labels)
     print(train_images.shape)
     print(train_labels)
-    a=1
 
     # Build and train the model
     model = build_model()
-    history = model.fit(train_images, train_labels, validation_split=0.2, epochs=10, batch_size=32)
+    history = model.fit(train_images, train_labels, validation_split=0.2, epochs=10, batch_size=32, shuffle=True)
 
     # Display the results
-    #plot_training_history(history)
+    plot_training_history(history)
+
+    # Evaluate the model on test data
+    print('Evaluating model on test data...')
+    test_images = preprocess_data(test_images)
+    test_labels = convert_labels(test_labels)
+
+    test_loss, test_accuracy = model.evaluate(test_images, test_labels)
+    #that is, # Calculate accuracy
+    #accuracy = np.mean(predicted_labels == test_labels)
+
+    print(' ')
+    print(f'Test accuracy: {test_accuracy:.4f}')
+    print(' ')
+
+    # Make predictions
+    print('Making predictions...')
+    predictions = model.predict(test_images)
+    predicted_labels = np.argmax(predictions, axis=1)
+
+
+
+    # Show some predictions
+    print('Showing some predictions...')
+    for i in range(3):
+        plt.imshow(test_images[i].reshape(128, 128), cmap='gray')
+        plt.title(f'True: {test_labels[i]}, Predicted: {predicted_labels[i]}')
+        plt.axis('off')
+        plt.show()
+
+    # Save the model
+    # model.save('model.h5')
 
     print('Bosh!')
 

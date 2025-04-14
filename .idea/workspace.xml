@@ -4,13 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dad6622a-087d-43ab-b634-9de1f9bd49fa" name="Changes" comment="Added data loader, basic prepocessing, a basic CNN model and basic evaluation">
+    <list default="true" id="dad6622a-087d-43ab-b634-9de1f9bd49fa" name="Changes" comment="bug in convert_labels function">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/data_loader.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/data_loader.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/preprocessing.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/preprocessing.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,24 +101,29 @@
       <option name="presentableId" value="LOCAL−00004" />
       <updated>1744186496876</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL−00005" summary="Added function to reformat labels to integers">
+      <option name="closed" value="true" />
+      <created>1744284273521</created>
+      <option name="number" value="LOCAL−00005" />
+      <option name="presentableId" value="LOCAL−00005" />
+      <updated>1744284273523</updated>
+    </task>
+    <task id="LOCAL−00006" summary="bug in convert_labels function">
+      <option name="closed" value="true" />
+      <created>1744284526269</created>
+      <option name="number" value="LOCAL−00006" />
+      <option name="presentableId" value="LOCAL−00006" />
+      <updated>1744284526269</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Project directory structure" />
     <MESSAGE value="Added a notebook for demonstrating the project" />
     <MESSAGE value="Added data loader, basic prepocessing, a basic CNN model and basic evaluation" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added data loader, basic prepocessing, a basic CNN model and basic evaluation" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/src/main.py</url>
-          <line>54</line>
-          <option name="timeStamp" value="11" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="Added function to reformat labels to integers" />
+    <MESSAGE value="bug in convert_labels function" />
+    <option name="LAST_COMMIT_MESSAGE" value="bug in convert_labels function" />
   </component>
 </project>

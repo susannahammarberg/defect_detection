@@ -22,8 +22,8 @@ def load_data(data_dir):
         if os.path.isdir(class_path):
             # take labels from folder-naming. Sorted with class.
             label = class_dir
-            #TODO obs tem just loading 11 images
-            for file_name in os.listdir(class_path)[0:11]:
+
+            for file_name in os.listdir(class_path):
                 file_path = os.path.join(class_path, file_name)
                 img = cv2.imread(file_path, cv2.IMREAD_GRAYSCALE)
                 if img is not None:
